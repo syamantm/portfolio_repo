@@ -8,7 +8,7 @@
     For more samples please have a look at my <a href="https://github.com/syamantm">GitHub Account</a>.
 </p>
 <p>
-    If you are interested in contracting me as a software engineer, further information can be found <%= link_to "Contact", contact_path %> section.
+    If you are interested in contracting me as a software engineer, further information can be found <%= link_to "Contact", contact_path %>section.
 </p>
 <p>
     <hr/><h3>Samples</h3>

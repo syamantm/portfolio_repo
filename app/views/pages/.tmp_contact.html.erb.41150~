@@ -1,0 +1,39 @@
+<h2><span>Contact</span> Details</h2>
+<div class="clr">
+</div>
+<p>
+    <h3>Address</h3>
+    R455, Glen Eyre Hall, Glen Eyre Road, Bassett
+    <br/>
+    Southampton SO16 3UF, UK
+</p>
+<p>
+    <h3>Email</h3>
+    <img src="images/email.png" width="18" height="18" alt="Primary Email Icon" />Primary Email : <a href="mailto:syamantak.mukhopadhyay@gmail.com">syamantak.mukhopadhyay@gmail.com</a>
+    <br/>
+    <img src="images/email.png" width="18" height="18" alt="Alternative Email Icon" />Alternative Email : <a href="mailto:sm19g10@ecs.soton.ac.uk">sm19g10@ecs.soton.ac.uk</a>
+    <br/>
+</p>
+<p>
+    <h3>Social Profiles</h3>
+    <a href="http://uk.linkedin.com/in/syamantakmukhopadhyay"><img src="images/linkedin.png" width="18" height="18" alt="Linkedin Icon" />Find Me on Linkedin</a>
+    <br/>
+    <a href="http://www.facebook.com/syamantak.mukherjee"><img src="images/facebook.png" width="18" height="18" alt="Facebook Icon" />Find Me on Facebook</a>
+    <br/>
+    <a href="http://www.twitter.com/syamantm"><img src="images/twitter.png" width="18" height="18" alt="Twitter Icon" />Find Me on Twitter</a>
+    <br/>
+</p>
+
+<p>Or you can just leave a message using the below form</p>
+<h2>Send Email</h2>
+<% form_for :email, :url => { :action => 'sendmail' } do |f| %>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :size => 60 %><br />
+    <%= f.label :address %><br />
+    <%= f.text_field :address, :size => 60 %><br />
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject, :size => 60 %><br />
+    <%= f.label :body %><br />
+    <%= f.text_area :body, :rols => 10, :cols => 60 %><br />
+    <%= submit_tag "Send Email "%>
+<% end %>

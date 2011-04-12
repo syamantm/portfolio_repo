@@ -23,4 +23,8 @@ class PagesController < ApplicationController
     @title = "Skills"
   end
   
+  def sendmail
+    
+  end
+  
 end

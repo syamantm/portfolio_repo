@@ -1,22 +1,26 @@
 class PagesController < ApplicationController
   def home
-     @title = "Home"
+    @title = "Home"
   end
   
   def contact
-     @title = "Contact"
+    @title = "Contact"
   end
   
   def education
-     @title = "Education"
+    @title = "Education"
   end
   
   def experience
-     @title = "Experience"
+    @title = "Experience"
   end
   
   def sample
-     @title = "Sample"
+    @title = "Sample"
+  end
+  
+  def skill
+    @title = "Skills"
   end
   
 end

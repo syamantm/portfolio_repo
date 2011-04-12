@@ -6,6 +6,8 @@ Portfolio::Application.routes.draw do
   
   match '/sample',    :to => 'pages#sample'
   
+  match '/skill',    :to => 'pages#skill'
+  
   root :to => 'pages#home'
   
   

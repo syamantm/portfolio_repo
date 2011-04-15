@@ -14,12 +14,12 @@
             </li>
 			 <li>
                 <%= link_to "Skills", skill_path %>
-            </li>            
+            </li>
+            <li>
+                <%= link_to "Sample", sample_path %>
+            </li>
             <li>
                 <%= link_to "Contact", contact_path %>
-            </li>
-			<li>
-                <%= link_to "Blog", "http://blog-syamantak.heroku.com" %>
             </li>
         </ul>
   </nav>

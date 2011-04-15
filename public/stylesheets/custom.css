@@ -1,5 +1,5 @@
 .container {
-  width: 710px;
+  width: 800px;
 }
 
 body {
@@ -62,11 +62,12 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 10px 0;
+  margin-right: 7px;
 }
 
 nav ul li a {
-  padding: 0 5px;
+  padding: 0 10px;
   font-weight: bold;
 }
 
@@ -106,7 +107,7 @@ a.signup_button {
  footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -187,57 +188,4 @@ div.field, div.actions {
 
 #nav_menu{
 	font-size: 16px;
-}
-
-/* Table Stype Zebra*/
-
-#ver-zebra
-{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-	font-size: 12px;
-	margin: 45px;
-	width: 480px;
-	text-align: left;
-	border-collapse: collapse;
-}
-#ver-zebra th
-{
-	font-size: 14px;
-	font-weight: normal;
-	padding: 12px 15px;
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	color: #039;
-}
-#ver-zebra td
-{
-	padding: 8px 15px;
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	color: #669;
-}
-.vzebra-odd
-{
-	background: #eff2ff;
-}
-.vzebra-even
-{
-	background: #e8edff;
-}
-#ver-zebra #vzebra-net, #ver-zebra #vzebra-php
-{
-	background: #d0dafd;
-	border-bottom: 1px solid #c8d4fd;
-}
-#ver-zebra #vzebra-java
-{
-	background: #dce4ff;
-	border-bottom: 1px solid #d6dfff;
-}
-
-.ciPicHldr{
-	width:152px;
-	vertical-align: top;
-	margin-left:auto;
-	margin-right:auto;
 }

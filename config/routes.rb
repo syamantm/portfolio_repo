@@ -2,10 +2,7 @@ Portfolio::Application.routes.draw do
    
   match '/education',  :to => 'pages#education'
   match '/experience',   :to => 'pages#experience'
-  match '/contact', :to => 'pages#contact'
-  
-  match '/sample',    :to => 'pages#sample'
-  
+  match '/contact', :to => 'pages#contact'  
   match '/skill',    :to => 'pages#skill'
   
  

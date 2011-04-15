@@ -13,11 +13,7 @@ class PagesController < ApplicationController
   
   def experience
     @title = "Experience"
-  end
-  
-  def sample
-    @title = "Sample"
-  end
+  end 
   
   def skill
     @title = "Skills"

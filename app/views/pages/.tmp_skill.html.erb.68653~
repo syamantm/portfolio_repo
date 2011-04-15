@@ -34,12 +34,3 @@
         </li>
     </ul>
 </div>
-<div>
-    <hr/><h2>Samples</h2>
-    <p>
-        For my sample works please have a look at my <a href="https://github.com/syamantm">GitHub Account</a>.
-    </p>
-    <p>
-        If you are interested in contracting me as a software engineer, further information can be found <%= link_to "Contact section", contact_path %>.
-    </p>
-</div>

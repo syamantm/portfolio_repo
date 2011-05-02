@@ -10,8 +10,8 @@ function loadData() {
       profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
       profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
 	  profHTML += "</hr>"
-      profHTML += "<span class=myheadline>" + profile.recommendations-received + "</span>";
-      $("#linkedInData").html(profHTML);
+      profHTML += "<span class=myheadline>" + profile.recommendation + "</span>";
+      $("#linkedInData").html(profile);
     });
 }
  

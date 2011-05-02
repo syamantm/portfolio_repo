@@ -1,21 +1,3 @@
-<script type="text/javascript">
- 
-function loadData() {
-  IN.API.Profile("me")
-    .fields(["id", "firstName", "lastName", "pictureUrl", "public-profile-url", "num-recommenders","recommendations-received"])
-    .result(function(result) {
-      profile = result.values[0];
-      profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
-      profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";     
-      profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
-      profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
-	  //profHTML += "</hr>"
-      //profHTML += "<span class=myheadline>" + profile.recommendation + "</span>";
-      $("#linkedInData").html(profHTML);
-    });
-}
- 
-</script>
 <h2><span>Skills</span></h2>
 <div class="clr">
 </div>
@@ -61,10 +43,3 @@ function loadData() {
         If you are interested in contracting me as a software engineer, further information can be found <%= link_to "Contact section", contact_path %>.
     </p>
 </div>
-<div>
-    <hr/><h2>Recommendations</h2> View my LinkedIn Recommendations....
-    <div id="linkedInData" class="yui3-skin-sam  yui-skin-sam">
-	
-</div>
-</div>
-<script type="IN/Login" data-onAuth="loadData"></script>

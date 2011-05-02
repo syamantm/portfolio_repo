@@ -1,3 +1,40 @@
+<script type="text/javascript">
+ 
+function loadData() {
+  IN.API.Profile("me")
+    .fields(["id", "firstName", "lastName", "pictureUrl", "public-profile-url"])
+    .result(function(result) {
+      profile = result.values[0];
+      profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
+      profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";     
+      profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
+      profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";	  
+      $("#linkedInData").html(profHTML);
+    });
+}
+
+ function SendMessage() {
+     var message = document.getElementById('message').value;
+     var BODY = {
+        "recipients": {
+           "values": [{
+             "person": {
+                "_path": "/people/~",
+             }
+           }]
+         },
+       "subject": "Direct message from My Website",
+       "body": message
+     }
+     IN.API.Raw("/people/~/mailbox")
+           .method("POST")
+           .body(JSON.stringify(BODY))
+           .result(function(result) {alert ("Message sent") })
+           .error(function error(e) { alert ("No dice") });
+ }
+ 
+</script>
+
 <h2><span>Contact</span> Details</h2>
 <div class="clr">
 </div>
@@ -24,3 +61,14 @@
     <br/>
 </p>
 
+<div>
+    <hr/><h3>Send Direct Message</h3> login via LinkedIn to send me a direct message....
+    <div id="linkedInData" class="yui3-skin-sam  yui-skin-sam">	
+</div>
+<form action="javascript:SendMessage();">
+        <textarea rows="5" cols="25" id="message" text=""></textarea>
+		<br/>
+        <input type="submit" value="Send Message!" />
+    </form>
+</div>
+<script type="IN/Login" data-onAuth="loadData"></script>

@@ -189,3 +189,7 @@ div.field, div.actions {
 #nav_menu{
 	font-size: 16px;
 }
+
+.contact-cols{
+	vertical-align:text-top;
+}

@@ -1,11 +1,20 @@
-<script type="IN/Login" data-onAuth="loadData">
-	function loadData() {
-	IN.API.Profile("me")
+<script type="text/javascript">
+ 
+function loadData() {
+  IN.API.Profile("me")
+    .fields(["id", "firstName", "lastName", "pictureUrl","headline"])
     .result(function(result) {
-        $("#linkedInData").html(JSON.stringify(result))
-    } );
-	}
-</script><
+      profile = result.values[0];
+      profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
+      profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";     
+      profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
+      profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
+      profHTML += "<span class=myheadline>" + profile.headline + "</span>";
+      $("#linkedInData").html("linkedin data goes here");
+    });
+}
+ 
+</script>
 h2><span>Skills</span></h2>
 <div class="clr">
 </div>
@@ -51,6 +60,7 @@ h2><span>Skills</span></h2>
         If you are interested in contracting me as a software engineer, further information can be found <%= link_to "Contact section", contact_path %>.
     </p>
 </div>
-<div id="linkedInData">
-	linkedin data goes here	
+<div id="linkedInData" class="yui3-skin-sam  yui-skin-sam">
+	
 </div>
+<script type="IN/Login" data-onAuth="loadData"></script>

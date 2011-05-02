@@ -2,7 +2,7 @@
  
 function loadData() {
   IN.API.Profile("me")
-    .fields(["id", "firstName", "lastName", "pictureUrl","recommendations-received"])
+    .fields(["recommendations-received"])
     .result(function(result) {
       profile = result.values[0];
       profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
@@ -11,7 +11,7 @@ function loadData() {
       profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
 	  profHTML += "</hr>"
       profHTML += "<span class=myheadline>" + profile.recommendation + "</span>";
-      $("#linkedInData").html(profile);
+      $("#linkedInData").html(result);
     });
 }
  

@@ -193,3 +193,10 @@ div.field, div.actions {
 .contact-cols{
 	vertical-align:text-top;
 }
+#contact-submit{
+	background-color:#3D80DE;
+	color: #fff;
+	-moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}

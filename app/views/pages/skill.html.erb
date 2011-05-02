@@ -2,7 +2,7 @@
  
 function loadData() {
   IN.API.Profile("me")
-    .fields(["id", "firstName", "lastName", "pictureUrl"])
+    .fields(["id", "firstName", "lastName", "pictureUrl", "recommendations-received"])
     .result(function(result) {
       profile = result.values[0];
       profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";

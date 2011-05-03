@@ -1,0 +1,75 @@
+<script type="text/javascript">
+ 
+function loadData() {
+  IN.API.Profile("me")
+    .fields(["id", "firstName", "lastName", "pictureUrl", "public-profile-url"])
+    .result(function(result) {
+      profile = result.values[0];
+      profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
+      profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";     
+      profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
+      profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";	  
+      $("#linkedInData").html(profHTML);
+    });
+}
+
+ function SendMessage() {
+     var message = document.getElementById('message').value;	 
+     var BODY = {
+        "recipients": {
+           "values": [{
+             "person": {
+                "_path": "/people/A7nJP5-HOX",
+             }
+           }]
+         },
+       "subject": "Direct message from My Website",
+       "body": message
+     }
+     IN.API.Raw("/people/~/mailbox")
+           .method("POST")
+           .body(JSON.stringify(BODY))
+           .result(function(result) {alert ("Message sent") });
+ }
+ 
+</script>
+
+<h2><span>Contact</span> Details</h2>
+<div class="clr">
+</div>
+<p>
+    <h3>Address</h3>
+    R455, Glen Eyre Hall, Glen Eyre Road, Bassett
+    <br/>
+    Southampton SO16 3UF, UK
+</p>
+<p>
+    <h3>Email</h3>
+    <img src="images/email.png" width="18" height="18" alt="Primary Email Icon" /> Primary Email : <a href="mailto:syamantak.mukhopadhyay@gmail.com">syamantak.mukhopadhyay@gmail.com</a>
+    <br/>
+    <img src="images/email.png" width="18" height="18" alt="Alternative Email Icon" /> Alternative Email : <a href="mailto:sm19g10@ecs.soton.ac.uk">sm19g10@ecs.soton.ac.uk</a>
+    <br/>
+</p>
+<p>
+    <h3>Social Profiles</h3>
+     <a href="http://uk.linkedin.com/in/syamantakmukhopadhyay"><img src="http://dl.dropbox.com/u/13996689/linkedin.png" width="20" height="20" alt="Linkedin Icon" /> Network</a>
+    <br/>
+    <a href="http://www.facebook.com/syamantak.mukherjee"><img src="http://dl.dropbox.com/u/13996689/facebook.png" width="20" height="20" alt="Facebook Icon" /> Chat</a>
+    <br/>
+    <a href="http://www.twitter.com/syamantm"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png"  width="20" height="20" alt="Follow syamantm on Twitter"/> Follow</a>
+    <br/>
+</p>
+
+<div>
+    <hr/><h3>Send Direct Message</h3> 
+	login with your LinkedIn id to send me a direct message....<br/>
+	<script type="IN/Login" data-onAuth="loadData"></script>   
+    <div id="linkedInData" class="yui3-skin-sam  yui-skin-sam">	
+</div>
+<form action="javascript:SendMessage();">
+        <textarea rows="5" cols="25" id="message" text=""></textarea>
+		<br/>
+        <input type="submit" value="Send Message!" id="contact-submit"/>
+    </form>
+</div>
+

@@ -1,9 +1,12 @@
 Portfolio::Application.routes.draw do
    
+  resources :users
+
   match '/education',  :to => 'pages#education'
   match '/experience',   :to => 'pages#experience'
   match '/contact', :to => 'pages#contact'  
   match '/skill',    :to => 'pages#skill'
+  match '/newrequest', :to => 'users#new'
   
  
   

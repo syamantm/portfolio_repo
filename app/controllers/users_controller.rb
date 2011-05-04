@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        VisitorMailer.cv_request(@user).deliver
+        VisitorMailer.visitor_request(@user).deliver
         format.html { redirect_to(root_path, :notice => "Thank you #{@user.name}! I will shortly reply to your request") }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else

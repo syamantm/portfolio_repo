@@ -202,3 +202,46 @@ div.field, div.actions {
   padding: 5px 5px 5px 5px;
 }
 
+form {
+	margin-top: 21px;
+	padding-top: 22px;
+	border-top: 1px solid #d7d7d7;
+}
+
+form p {
+	/*display: table;*/
+	margin-bottom: 22px;
+	padding: 0 22px;
+}
+
+form label {
+	/*display: table-cell;*/
+	width: 140px;
+	padding-right: 20px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+	
+form input[type="text"], form input[type="email"], form input[type="url"] {
+	/*display: table-cell;*/
+	width: 300px;
+	height: 20px;
+	border: 1px solid #d7d7d7;
+}
+		
+form textarea {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #d7d7d7;
+}
+		
+form input[type="submit"] {
+	margin-left: 262px;
+	background-color:#3D80DE;
+	color: #fff;
+	-moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+  padding: 5px 5px 5px 5px;
+}

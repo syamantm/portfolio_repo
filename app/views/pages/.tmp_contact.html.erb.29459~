@@ -1,0 +1,23 @@
+<h2><span>Contact</span> Details</h2>
+<div class="clr">
+</div>
+<div class="request-round">
+	For specific requests, including request for complete CV with references  <%= link_to "Contact Me", newrequest_path %>
+</div>
+<p>
+    <h3>Address</h3>
+    R455, Glen Eyre Hall, Glen Eyre Road, Bassett
+    <br/>
+    Southampton SO16 3UF, UK
+</p>
+<p>
+    <h3>Social Profiles</h3>
+     <a href="http://uk.linkedin.com/in/syamantakmukhopadhyay"><img src="http://dl.dropbox.com/u/13996689/linkedin.png" width="20" height="20" alt="Linkedin Icon" /> Network</a>
+    <br/>
+    <a href="http://www.facebook.com/syamantak.mukherjee"><img src="http://dl.dropbox.com/u/13996689/facebook.png" width="20" height="20" alt="Facebook Icon" /> Chat</a>
+    <br/>
+    <a href="http://www.twitter.com/syamantm"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png"  width="20" height="20" alt="Follow syamantm on Twitter"/> Follow</a>
+    <br/>
+</p>
+
+

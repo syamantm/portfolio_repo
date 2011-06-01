@@ -3,6 +3,3 @@ All fields are mandatory!
 <p>
 <%= render 'form' %>
 </p>
-<div class="request-round">
-<%= link_to 'Back', contact_path %>
-</div>

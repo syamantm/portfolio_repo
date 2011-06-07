@@ -1,5 +1,5 @@
 .container {
-  width: 800px;
+  width: 900px;
 }
 
 body {
@@ -67,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 0 3px;
+  padding: 0 10px;
   font-weight: bold;
 }
 
@@ -107,7 +107,7 @@ a.signup_button {
  footer {
   text-align: center;
   margin-top: 10px;
-  width: 800px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }

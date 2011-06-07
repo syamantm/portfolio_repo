@@ -1,12 +1,7 @@
 <h2><span>Contact</span> Details</h2>
-<script>
-	$(function() {
-		$( "button, input:submit, a", ".jqueryAnchor" ).button();		
-	});
-	</script>
 <div class="clr">
 </div>
-<div class="jqueryAnchor">
+<div class="request-round">
    <p>For specific requests, including request for complete CV with references <%= link_to "Contact Me", newrequest_path %></p>
 </div>
 <div id="accordion-con">

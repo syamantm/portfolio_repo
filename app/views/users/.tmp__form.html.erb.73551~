@@ -1,8 +1,3 @@
-<script>
-	$(function() {
-		$( "button, input:submit, a", ".jquerySubmit" ).button();		
-	});
-	</script>
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -32,7 +27,7 @@
     
    <%= f.label :content %>	<%= f.text_area :content %> 
   </div>
-  <div class="actions jquerySubmit">
+  <div class="actions">
     <%= f.submit "Submit Request"%>
   </div>
 <% end %>

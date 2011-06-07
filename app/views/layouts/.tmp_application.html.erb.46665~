@@ -4,13 +4,6 @@
         <title><%= title %></title>
         <%= csrf_meta_tag %>
         <%= render 'layouts/stylesheets' %>
-		<script>
-  $(document).ready(function() {
-    $("#accordion-edu").accordion();
-	$("#accordion-exp").accordion();
-	$("#accordion-res").accordion();
-  });
-  </script>
     </head>
     <body>
         <div class="container">

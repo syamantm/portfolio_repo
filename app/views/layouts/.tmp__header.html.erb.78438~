@@ -19,7 +19,7 @@
                 <%= link_to "Contact", contact_path %>
             </li>
 			<li>
-                <%= link_to "Blog", "http://blog-syamantak.heroku.com" %>
+                <%= link_to "Blog", "http://blog.syamantakm.com" %>
             </li>
         </ul>
   </nav>

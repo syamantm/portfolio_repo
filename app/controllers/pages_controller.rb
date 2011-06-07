@@ -11,6 +11,10 @@ class PagesController < ApplicationController
     @title = "Education"
   end
   
+  def research
+    @title = "Research"
+  end
+  
   def experience
     @title = "Experience"
   end 

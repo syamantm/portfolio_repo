@@ -2,16 +2,12 @@
 <div class="clr">
 </div>
 <hr>
-<div id="accordion-edu">
-
-  <h3><a href="#">Master Degree</a></h3>
- <div>
- 	<h4>2010-2011 : MSc in Computer Science - University of Southampton, UK</h4>
- University : <a href="http://www.soton.ac.uk/">University of Southampton</a>
+<p>
+    <b><h3>2010-2011 : MSc in Computer Science - University of Southampton, UK</h3> University : <a href="http://www.soton.ac.uk/">University of Southampton</a>
         <br/>
         Graduate School : <a href="http://www.ecs.soton.ac.uk/">School of Electronics and Computer Science</a>
     </b>
-
+</p>
 <p>
     <ul>
         <li>
@@ -28,13 +24,10 @@
         </li>
     </ul>
 </p>
-</div>
-
-<h3><a href="#">Bachelor Degree</a></h3>
-<div>
-	<h4>2002-2006 : Bachelor of Engineering in Information Technology - Jadavpur University, India</h4>
-University : <a href="http://www.jaduniv.edu.in/">Jadavpur University, Kolkata, India</a></b>
-
+<hr>
+<p>
+    <b><h3>2002-2006 : Bachelor of Engineering in Information Technology - Jadavpur University, India</h3>University : <a href="http://www.jaduniv.edu.in/">Jadavpur University, Kolkata, India</a></b>
+</p>
 <p>
     <ul>
         <li>
@@ -48,5 +41,4 @@ University : <a href="http://www.jaduniv.edu.in/">Jadavpur University, Kolkata, 
         </li>
     </ul>
 </p>
-</div>
-</div>
+<hr>

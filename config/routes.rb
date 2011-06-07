@@ -4,6 +4,7 @@ Portfolio::Application.routes.draw do
 
   match '/education',  :to => 'pages#education'
   match '/experience',   :to => 'pages#experience'
+  match '/research',   :to => 'pages#research'
   match '/contact', :to => 'pages#contact'  
   match '/skill',    :to => 'pages#skill'
   match '/newrequest', :to => 'users#new'

@@ -34,40 +34,39 @@ Throughout my four years at AMDOCS, I was part of the product development group 
 <div id="accordion-exp">
 	<h3><a href="#">Enterprise Product Catalog</a></h3>
 	<div>
-		        
+
+    <hr><b><img src="images/product.png" alt="Product icon" height="20" width="20" > Enterprise Product Catalog </b>(2009 to 2010 Amdocs Dev. Ltd, India)<hr>
+    <br/>
     <u><b><i><a href="http://www.enterpriseproductcatalog.com/">Enterprise Product Catalog</a></i></b></u>
 	, as the name suggests, is a product catalog application which is used by clients to define and store catalog data in a centralized place. 
     <br/>
     <b>Technology Used:</b>
-    Java, Java EE, Weblogic, Swing, Jgoodies, Eclipse, XSD, XPath, Toad, Oracle 9i/10g.
-	<br/><b>Timeline & Location:</b>
-	2009 to 2010, Amdocs Dev. Ltd, India 
+    Java, Java EE, Weblogic, Swing, Jgoodies, Eclipse, XSD, XPath, Toad, Oracle 9i/10g
 
 </div>
 
 <h3><a href="#">Amdocs Ordering & Sales Engine</a></h3>
-	<div>   
-    
+	<div>
+
+    <hr><b><img src="images/product.png" alt="Product icon" height="20" width="20"> Amdocs Ordering & Sales Engine</b>(2009 to 2010 Amdocs Dev. Ltd, India)<hr>
+    <br/>
     <u><b><i><a href="http://www.amdocs.com/Products/Customer-Management/Sales-Ordering/Pages/Ordering.aspx">Amdocs Ordering</a></i></b></u>
     is an <a href="http://en.wikipedia.org/wiki/Order_management_system">Order Management System</a>
     product by Amdocs. Sales Engine is a new product introduced by Amdocs which provides search and recommendation services on product catalog data. 
     <br/>
     <b>Technology Used:</b>
-    Java, Hibernate, Weblogic, Spring Framework, Jaxb, Indexing Server (Based on Solr), Eclipse, XSD, XPath, Toad, Oracle 11g, JUnit.
-	<br/><b>Timeline & Location:</b>
-	2009 to 2010, Amdocs Dev. Ltd, India 
-	
+    Java, Hibernate, Weblogic, Spring Framework, Jaxb, Indexing Server (Based on Solr), Eclipse, XSD, XPath, Toad, Oracle 11g, JUnit 
 </div>
 
 <h3><a href="#">Amdocs Document Designer</a></h3>
-	<div>   
-    
+	<div>
+
+    <hr><b><img src="images/product.png" alt="Product icon" height="20" width="20"> Amdocs Document Designer </b>(2006 to 2009 Amdocs Dev. Ltd, Cyprus)<hr>
+    <br/>
     <u><b><i><a href="http://www.amdocs.com/Products/Revenue-Management/Billing-Charging/Pages/Document-Designer.aspx">Amdocs Document Designer</a></i></b></u>
     is a complete product, which deals with complete life cycle management of document in Telco and Cable domains. My prime responsibility was to Design the architecture and Develop Front End for Amdocs Document Designer. 
     <br/>
     <b>Technology Used:</b>
-    Windows, C#, NUnit, MFC, Toad, Oracle 9i/10g .
-	<br/><b>Timeline & Location:</b>
-	2006 to 2009, Amdocs Dev. Ltd, Cyprus
+    Windows, C#, NUnit, MFC, Toad, Oracle 9i/10g 
 </div>
 </div>

@@ -227,13 +227,13 @@ form input[type="text"], form input[type="email"], form input[type="url"] {
 	/*display: table-cell;*/
 	width: 300px;
 	height: 20px;
-	border: 1px solid #d7d7d7;
+	border: 2px solid #d7d7d7;
 }
 		
 form textarea {
 	width: 400px;
 	height: 200px;
-	border: 1px solid #d7d7d7;
+	border: 2px solid #d7d7d7;
 }
 		
 form input[type="submit"] {
@@ -245,3 +245,5 @@ form input[type="submit"] {
   border-radius:         10px;
   padding: 5px 5px 5px 5px;
 }
+
+

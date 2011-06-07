@@ -1,0 +1,5 @@
+<h1>Request for Information</h1>
+All fields are mandatory!
+<p>
+<%= render 'form' %>
+</p>

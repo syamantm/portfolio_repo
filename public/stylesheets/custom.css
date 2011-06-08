@@ -56,6 +56,21 @@ section h1 {
   color: #069;
 }
 
+#skills a {
+  color: #069;
+  text-decoration: none;
+}
+
+#skills a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+#skills a:visited {
+  color: #069;
+}
+
+
 div a {
   color: #069;
   text-decoration: none;
@@ -87,6 +102,26 @@ div a {
 }
 
 #add-exp a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+#soton-edu a {
+  color: #069;
+  text-decoration: none;
+}
+
+#soton-edu a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+#ju-edu a {
+  color: #069;
+  text-decoration: none;
+}
+
+#ju-edu a:hover {
   color: #069;
   text-decoration: underline;
 }

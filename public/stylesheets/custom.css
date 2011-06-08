@@ -28,23 +28,67 @@ section h1 {
 
 /* Links */
 
-a {
-  color: #09c;
+#papers a {
+  color: #069;
   text-decoration: none;
 }
 
-a:hover {
+#papers a:hover {
   color: #069;
   text-decoration: underline;
 }
 
-a:visited {
+#papers a:visited {
+  color: #069;
+}
+
+#samples a {
+  color: #069;
+  text-decoration: none;
+}
+
+#samples a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+#samples a:visited {
   color: #069;
 }
 
 div a {
-  color: #09c;
+  color: #069;
   text-decoration: none;
+}
+
+#epc-exp a {
+  color: #069;
+  text-decoration: none;
+}
+
+#epc-exp a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+#oms-exp a {
+  color: #069;
+  text-decoration: none;
+}
+
+#oms-exp a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+#add-exp a {
+  color: #069;
+  text-decoration: none;
+}
+
+#add-exp a:hover {
+  color: #069;
+  text-decoration: underline;
 }
 
 div a:hover {
@@ -57,7 +101,19 @@ div a:visited {
 }
 
 
+a {
+  color: #069;
+  text-decoration: none;
+}
 
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
 /* Navigation */
 
 nav {

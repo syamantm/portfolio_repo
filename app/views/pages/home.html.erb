@@ -1,21 +1,58 @@
-<h2><span>About</span> Me</h2>
+<h2>
+<span>About</span> Me
+</h2>
 <p>
-    An accomplished developer with strong skills in Object Oriented Technologies and always keen to learn new ways to make computers solve problems. 
-    currently pursuing MSc in Web Technology from <a href="http://www.ecs.soton.ac.uk/">School of Electronics and Computer Science,</a>
-    University of Southampton, UK. 
+	An accomplished developer with strong skills in Object Oriented Technologies and always keen to learn new ways to make computers solve problems.
+	currently pursuing MSc in Web Technology from
+	<a href="http://www.ecs.soton.ac.uk/">School of Electronics and Computer Science,</a>
+	University of Southampton, UK.
 </p>
+<p>
+	For four years, I have served as a Sr. Subject Matter Expert for Amdocs Dev. Ltd.,
+	where I have been repeatedly recognized for developing innovative solutions. Working in Agile (Scrum) d
+	evelopment methodology I was responsible for development of next-generation software, from design,
+	coding to testing, documentation and implementation. I have also served the role of a "scrum master".
+	Known for excellent client-facing skills, I also excel in merging business and user needs into high-quality,
+	cost-effective design solutions while keeping within budgetary constraints.
+</p>
+
+<!-- labels appear against the slider, as pointers to the user -->
+<!--
+<span class="slider-lb1">Education</span>
+<span class="slider-lb2">Research</span>
+<span class="slider-lb3">Experience</span>
+<span class="slider-lb4">Experience</span>
+<span class="slider-lb4">Experience</span>
+-->
+<!-- the handler to action the slide -->
+<br/>
+<div id="blogFeed">
+	<h3>Feed from My Blog</h3>
+	<% readRss %>
+
+	<% @rss.items.each do |post| %>
+	<p>
+		<b><%= link_to post.title, post.link %></b><br/> on <%= post.date.strftime("%B %d, %Y")%>
+		<%= truncate_words(post.description, 30).html_safe%><%= link_to "[more]", post.link%>
+	</p>
+	<% end %>
+</div>
+<!--
 <table summary="Formate image and text">
-    <tr>
-        <td class="ciPicHldr">
-            <a href="images/Me.jpg"><img src="images/Me.jpg" width="220" height="250" alt="Syamantak Mukhopadhyay Image" /></a>
-            <p style="margin-top:7px;">
-                Syamantak Mukhopadhyay
-            </p>
-        </td>
-        <td class="ciPicHldr">
-            <p>
-                For four years, I have served as a Sr. Subject Matter Expert for Amdocs Dev. Ltd., where I have been repeatedly recognized for developing innovative solutions. Working in Agile (Scrum) development methodology I was responsible for development of next-generation software, from design, coding to testing, documentation and implementation. I have also served the role of a "scrum master".Known for excellent client-facing skills, I also excel in merging business and user needs into high-quality, cost-effective design solutions while keeping within budgetary constraints.
-            </p>
-        </td>
-    </tr>
+<tr>
+<td class="ciPicHldr">
+<a href="images/Me.jpg">
+<img src="images/Me.jpg" width="220" height="250" alt="Syamantak Mukhopadhyay Image" />
+</a>
+<p style="margin-top:7px;">
+Syamantak Mukhopadhyay
+</p>
+</td>
+<td class="ciPicHldr">
+<p>
+For four years, I have served as a Sr. Subject Matter Expert for Amdocs Dev. Ltd., where I have been repeatedly recognized for developing innovative solutions. Working in Agile (Scrum) development methodology I was responsible for development of next-generation software, from design, coding to testing, documentation and implementation. I have also served the role of a "scrum master".Known for excellent client-facing skills, I also excel in merging business and user needs into high-quality, cost-effective design solutions while keeping within budgetary constraints.
+</p>
+</td>
+</tr>
 </table>
+-->

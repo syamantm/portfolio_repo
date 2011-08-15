@@ -1,3 +1,5 @@
+
+
 class PagesController < ApplicationController
   def home
     @title = "Home"
@@ -26,5 +28,7 @@ class PagesController < ApplicationController
   def sendmail
     
   end
+  
+ 
   
 end

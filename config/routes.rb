@@ -8,6 +8,7 @@ Portfolio::Application.routes.draw do
   match '/contact', :to => 'pages#contact'  
   match '/skill',    :to => 'pages#skill'
   match '/newrequest', :to => 'users#new'
+   match '/readRss', :to => 'pages#readRss'
   
  
   

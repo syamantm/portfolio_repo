@@ -2,9 +2,11 @@
 	width: 900px;
 }
 body {
-	background: #9AC0DF;
-	/*background-color: #565656;*/
-	/*background-image: url('images/bloghome.png') no-repeat;*/
+	/*background: #9AC0DF;*/
+	background-color: #565656;
+	background-image: url('/images/background.JPG') ;
+	background-repeat:no-repeat;
+	background-size: 1280px 1040px;
 }
 header {
 	padding-top: 20px;
@@ -305,4 +307,8 @@ form input[type="submit"] {
 }
 .roles li {
 	list-style-type:square;
+}
+
+.jqueryAnchor a{
+	font-size: 12px;
 }

@@ -1,35 +1,49 @@
-<script>
-    $(function(){
-        $("#researchTabs").tabs();
-    });
-</script>
-<h2><span>Research</span> Activities</h2>
+<script>$( function() {
+		$("#researchTabs").tabs();
+	});</script>
+<h2>
+<span>Research</span> Activities
+</h2>
 <div class="clr">
 </div>
 <div id="researchTabs">
 	<ul>
-        <li>
-            <a href="#papers">Published Papers</a>
-        </li>
-        <li>
-            <a href="#workshops">Workshops And Conferences</a>
-        </li>
-    </ul>
-    
-    <div id="papers">    	
-        <ul>
-            <li>
-                Mukhopadhyay, S. and Argles, D. (2011) 
-				<a href="http://eprints.ecs.soton.ac.uk/22380/">An Anti-Phishing mechanism for Single Sign-On based on QR-Code</a>.
-                In: <i>The First International Workshop on Application of Artificial Intelligence for Email Management (AAIEM 2011)</i>, June 27-29, 2011, London, UK
-            </li>
-        </ul>
-    </div>    
-    <div id="workshops">
-        <ul>
-            <li>
-                The First International Workshop on Application of Artificial Intelligence for Email Management (AAIEM 2011), June 27-29, 2011, London, UK
-            </li>
-        </ul> 
-    </div>
+		<li>
+			<a href="#papers">Publications</a>
+		</li>
+		<li>
+			<a href="#workshops">Workshops And Conferences</a>
+		</li>
+	</ul>
+	<div id="papers">
+
+		<p>From <a href="http://eprints.ecs.soton.ac.uk">ECS EPrints</a> RSS Feed </p>
+		<% readEPrintsRss %>
+
+		<ul>
+			<!--
+			<li>
+			Mukhopadhyay, S. and Argles, D. (2011)
+			<a href="http://eprints.ecs.soton.ac.uk/22380/">An Anti-Phishing mechanism for Single Sign-On based on QR-Code</a>.
+			In: <i>The First International Workshop on Application of Artificial Intelligence for Email Management (AAIEM 2011)</i>, June 27-29, 2011, London, UK
+			</li>
+			-->
+
+			<% @erptintsRss.items.each do |post| %>
+			<li>
+				<b><%= link_to post.title, post.link %></b>
+				<br/>
+				<%= post.description%>				
+			</li>
+<br/>
+			<% end %>
+		</ul>
+	</div>
+	<div id="workshops">
+		<ul>
+			<li>
+				The First International Workshop on Application of Artificial Intelligence for Email Management ( <a href="http://www.i-society.eu/">i-society</a> 2011), June 27-29, 2011, London, UK
+			</li>
+		</ul>
+	</div>
 </div>

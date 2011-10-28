@@ -20,6 +20,10 @@ module ApplicationHelper
     @rss = RSS::Parser.parse(open('http://blog.syamantakm.com/posts.rss').read, false)
   end
   
+  def readEPrintsRss
+    @erptintsRss = RSS::Parser.parse(open('http://eprints.ecs.soton.ac.uk/cgi/exportview/person/24766/RSS2/24766.xml').read, false)
+  end
+  
   def truncate_words(text, length = 80)
      
     return if text == nil
